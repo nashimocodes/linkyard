@@ -11,7 +11,7 @@ gtag('js', new Date());
 gtag('config', 'G-CGPXSTF0RS');
 
 async function handleLinks() {
-  const res = await fetch("/links.json").then(r => r.json());
+  const res = await fetch("links.json").then(r => r.json());
   const mainDiv = document.getElementById("links-list");
 
   for (const [key, value] of Object.entries(res)) {
